@@ -1,0 +1,48 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f1ea; /* muted background, not the card itself */
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.card {
+  background: #f3f1ea; /* off-white card stock */
+  width: 2000px;
+  padding: 100px 40px;
+  text-align: center;
+
+  
+}
+
+.label {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #050101;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6), 0 -1px 0 rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6), 0 -1px 0 rgba(0,0,0,0.1);
+
+}
+
+.contact p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
