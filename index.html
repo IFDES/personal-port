@@ -3,20 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name</title>
+  <title>Ali Zain Malik</title>
+  <meta name="description" content="Portfolio of Ali Zain Malik, computer science student at the University of Alberta.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="card">
-    <h1 class="name">Ali Zain Malik</h1>
-    <p class="label">alizain@ualberta.ca</p>
-    <div class="contact">
-      <p>github.com/IFDES</p>
-      <p>linkedin.com/in/ali-zain-malik</p>
-      <p>Edmonton, Alberta</p>
-    </div>
-  </div>
+<body data-view="home">
+  <header>
+    <nav aria-label="Main">
+      <a href="#home" class="nav-home" data-v="home">Home</a>
+      <a href="#projects" data-v="projects">Projects</a>
+      <a href="#experience" data-v="experience">Work Experience</a>
+      <a href="#about" data-v="about">Who I Am</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view" id="home">
+      <div class="frame">
+        <div class="card">
+          <a class="c-email" href="https://github.com/IFDES">github.com/IFDES</a>
+          <div class="c-tag">
+            <strong>University of Alberta</strong>
+            <span>CS Specialization</span>
+          </div>
+          <div class="c-name"><h1>Ali Zain Malik</h1><p>Software Engineer</p></div>
+          <p class="c-foot">Edmonton, Canada &middot; <a href="https://www.linkedin.com/in/ali-zain-malik/">linkedin.com/in/ali-zain-malik</a> &middot; <a href="mailto:alizainkmalik@gmail.com">alizainkmalik@gmail.com</a></p>
+      </div>
+    </section>
+
+    <section class="view top" id="projects" hidden>
+      <div class="frame">
+        <h2>Projects</h2>
+        <p class="sub">Things I have built for courses and on my own.</p>
+        <div class="grid">
+          <article class="tile">
+            <small>Project 01</small>
+            <h3>Decentralized Social Network</h3>
+            <p>A federated network where independent servers share posts, follows, likes and comments through REST APIs, with public and private visibility.</p>
+            <footer>Django, PostgreSQL &middot; Team project</footer>
+          </article>
+          <article class="tile">
+            <small>Project 02</small>
+            <h3>Mood Management App</h3>
+            <p>An Android app for tracking mood over time, with Firestore queries tuned to run about 20% faster.</p>
+            <footer>Java, Firebase &middot; <a href="https://github.com/cmput301-w25/project-impostersyndrome">GitHub</a></footer>
+          </article>
+          <article class="tile">
+            <small>Project 03</small>
+            <h3>Full-Stack Movie App</h3>
+            <p>A responsive movie browser whose Express backend proxies the TMDB API so the key never reaches the client.</p>
+            <footer>React, Node.js &middot; Personal project</footer>
+          </article>
+          <article class="tile">
+            <small>Project 04</small>
+            <h3>CNN Image Classification</h3>
+            <p>Convolutional networks built from scratch in PyTorch, then diagnosed with loss curves and confusion matrices.</p>
+            <footer>PyTorch &middot; CMPUT 466</footer>
+          </article>
+          <article class="tile">
+            <small>Project 05</small>
+            <h3>Twitter Model</h3>
+            <p>A predictive model for analysing user sentiment and tweet patterns, with SQLite storage and data pipelines.</p>
+            <footer>Python, SQLite &middot; <a href="https://github.com/IFDES/Twitter-Model">GitHub</a></footer>
+          </article>
+          <article class="tile">
+            <small>Project 06</small>
+            <h3>Object Rendering</h3>
+            <p>Anti-aliasing and supersampling to improve render quality, using pointer-based data structures in C.</p>
+            <footer>C &middot; Personal project</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="view top" id="experience" hidden>
+      <div class="frame">
+        <h2>Work Experience</h2>
+        <p class="sub">Where I have worked and taught.</p>
+        <div class="grid">
+          <article class="tile">
+            <h3>Data Analyst Co-op</h3><em>ATCO Gas</em><time>May 2026 &ndash; Present</time>
+            <p>Built a star schema on Databricks and four Power BI dashboards, cutting manual reporting time by 25%.</p>
+            <footer>Edmonton, AB</footer>
+          </article>
+          <article class="tile">
+            <h3>Teaching Assistant</h3><em>University of Alberta, CMPUT 174</em><time>Sep 2025 &ndash; May 2026</time>
+            <p>Helped 120+ students with debugging and problem-solving, and gave feedback on assignments.</p>
+            <footer>Edmonton, AB</footer>
+          </article>
+          <article class="tile">
+            <h3>Co-President</h3><em>Ismaili Students Association</em><time>Apr 2025 &ndash; Apr 2026</time>
+            <p>Led a 14-member executive team that ran large campus events.</p>
+            <footer>Edmonton, AB</footer>
+          </article>
+          <article class="tile">
+            <h3>Sales Associate</h3><em>Windermere Chrysler Dodge Jeep Ram</em><time>May 2024 &ndash; Aug 2024</time>
+            <p>Turned customer requirements into structured solutions and cut processing time by about 15%.</p>
+            <footer>Edmonton, AB</footer>
+          </article>
+          <article class="tile">
+            <h3>Volunteer</h3><em>Ismaili Volunteers</em><time>Jun 2020 &ndash; Present</time>
+            <p>Supported community events through coordination and organization.</p>
+            <footer>Edmonton, AB</footer>
+          </article>
+          <article class="tile">
+            <h3>Founder</h3><em>Table Tennis Club, Lillian Osborne High School</em><time>Sep 2022 &ndash; Apr 2023</time>
+            <p>Created local table tennis tournaments through coordination and teamwork.</p>
+            <footer>Edmonton, AB</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="about" hidden>
+      <div class="frame">
+        <div class="about">
+          <div class="photo">
+            <img src="me.png" alt="Ali Zain Malik">
+          </div>
+          <div class="bio">
+            <h2>Who I Am</h2>
+            <small>My mission</small>
+            <p>I am a computer science student at the University of Alberta and a data analyst intern at ATCO Gas. I turn messy data and unclear requirements into software people can rely on.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
