@@ -11,7 +11,7 @@ body {
 
 .card {
   background: #f3f1ea; /* off-white card stock */
-  width: 2000px;
+  width: min(92vw, 640px);
   padding: 100px 40px;
   text-align: center;
 
