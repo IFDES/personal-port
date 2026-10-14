@@ -31,6 +31,7 @@
           </div>
           <div class="c-name"><h1>Ali Zain Malik</h1><p>Software Engineer</p></div>
           <p class="c-foot">Edmonton, Canada &middot; <a href="https://www.linkedin.com/in/ali-zain-malik/">linkedin.com/in/ali-zain-malik</a> &middot; <a href="mailto:alizainkmalik@gmail.com">alizainkmalik@gmail.com</a></p>
+        </div>
       </div>
     </section>
 
@@ -40,40 +41,56 @@
         <p class="sub">Things I have built for courses and on my own.</p>
         <div class="grid">
           <article class="tile">
-            <small>Project 01</small>
-            <h3>Decentralized Social Network</h3>
-            <p>A federated network where independent servers share posts, follows, likes and comments through REST APIs, with public and private visibility.</p>
-            <footer>Django, PostgreSQL &middot; Team project</footer>
+            <div class="meta">
+              <small>Project 01</small>
+              <h3>CNN Children vs. Adults Image Classifier</h3>
+              <em>Python, PyTorch, scikit-learn, Computer Vision, Google Colab</em>
+              <footer><a href="https://github.com/IFDES/CNN-children-vs-adults">GitHub</a></footer>
+            </div>
+            <ul>
+              <li>Built a 229M-parameter <strong>Convolutional Neural Network (CNN)</strong> from scratch in <strong>PyTorch</strong> on 680 training images; benchmarked 7 activation functions, including a custom one (56&ndash;67% test accuracy).</li>
+              <li>Improved test accuracy from 66.7% to <strong>80.0%</strong> (+13 pts) using <strong>transfer learning</strong> with pretrained <strong>ResNet-18/50/152</strong>; frozen backbones beat fine-tuning on deeper models (75.0% vs. 61.7%).</li>
+              <li>Raised minority-class recall from 40% to 67% on a 4:1 <strong>imbalanced dataset</strong> using <strong>WeightedRandomSampler</strong>, evaluated with balanced accuracy and per-class precision/recall.</li>
+            </ul>
           </article>
           <article class="tile">
-            <small>Project 02</small>
-            <h3>Mood Management App</h3>
-            <p>An Android app for tracking mood over time, with Firestore queries tuned to run about 20% faster.</p>
-            <footer>Java, Firebase &middot; <a href="https://github.com/cmput301-w25/project-impostersyndrome">GitHub</a></footer>
+            <div class="meta">
+              <small>Project 02</small>
+              <h3>Decentralized Social Network</h3>
+              <em>Python, Django, Django REST Framework, PostgreSQL</em>
+              <footer><a href="https://github.com/IFDES/Decentralized-Social-Network-Project">GitHub</a></footer>
+            </div>
+            <ul>
+              <li>Designed a modular relational data model (authors, posts, follows, inbox, interactions) supporting federated data exchange across independent nodes via REST APIs.</li>
+              <li>Built RESTful endpoints for remote author discovery and structured inter-node data synchronization.</li>
+              <li>Implemented data access controls (public/private visibility) and an inbox-based data delivery pipeline.</li>
+              <li>Coordinated development across a multi-person team using GitHub Projects for task tracking and prioritization.</li>
+            </ul>
           </article>
           <article class="tile">
-            <small>Project 03</small>
-            <h3>Full-Stack Movie App</h3>
-            <p>A responsive movie browser whose Express backend proxies the TMDB API so the key never reaches the client.</p>
-            <footer>React, Node.js &middot; Personal project</footer>
+            <div class="meta">
+              <small>Project 03</small>
+              <h3>Mood Management Mobile App</h3>
+              <em>Java, Firebase, Android Studio</em>
+              <footer><a href="https://github.com/cmput301-w25/project-impostersyndrome">GitHub</a></footer>
+            </div>
+            <ul>
+              <li>Developed a real-time application using Firebase Firestore to store, retrieve, and analyze mood data.</li>
+              <li>Designed Firestore schemas and optimized queries, improving data retrieval performance by ~20%.</li>
+              <li>Collaborated in a 4-person team using GitHub workflows and added unit/UI testing for data reliability.</li>
+            </ul>
           </article>
           <article class="tile">
-            <small>Project 04</small>
-            <h3>CNN Image Classification</h3>
-            <p>Convolutional networks built from scratch in PyTorch, then diagnosed with loss curves and confusion matrices.</p>
-            <footer>PyTorch &middot; CMPUT 466</footer>
-          </article>
-          <article class="tile">
-            <small>Project 05</small>
-            <h3>Twitter Model</h3>
-            <p>A predictive model for analysing user sentiment and tweet patterns, with SQLite storage and data pipelines.</p>
-            <footer>Python, SQLite &middot; <a href="https://github.com/IFDES/Twitter-Model">GitHub</a></footer>
-          </article>
-          <article class="tile">
-            <small>Project 06</small>
-            <h3>Object Rendering</h3>
-            <p>Anti-aliasing and supersampling to improve render quality, using pointer-based data structures in C.</p>
-            <footer>C &middot; Personal project</footer>
+            <div class="meta">
+              <small>Project 03</small>
+              <h3>Object Rendering with Anti-Aliasing</h3>
+              <em>C Programming</em>
+            </div>
+            <ul>
+              <li>Implemented anti-aliasing and supersampling techniques to improve rendering quality.</li>
+              <li>Optimized memory usage and execution flow using pointer-based data structures.</li>
+              <li>Strengthened understanding of low-level systems programming and performance optimization.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -85,24 +102,74 @@
         <p class="sub">Where I have worked and taught.</p>
         <div class="grid">
           <article class="tile">
-            <h3>Data Analyst Co-op</h3><em>ATCO Gas</em><time>May 2026 &ndash; Present</time>
-            <p>Built a star schema on Databricks and four Power BI dashboards, cutting manual reporting time by 25%.</p>
-            <footer>Edmonton, AB</footer>
+            <div class="meta">
+              <h3>Data Engineer Co-op</h3>
+              <em>ATCO</em>
+              <time>May 2026 &ndash; Present</time>
+              <span class="stack">Databricks, Python, Power BI, SQL, PySpark, Oracle, Azure</span>
+              <footer>Edmonton, AB</footer>
+            </div>
+            <ul>
+              <li>Performed data validation and quality evaluation on curated fact/dimension tables (50,000+ records), filtered and aggregated from source tables containing millions of raw rows, reducing reporting discrepancies by 15%.</li>
+              <li>Queried and validated data from Oracle databases (Maximo ADW) using Oracle Client, integrating query outputs into Power BI KPI reporting and downstream data validation workflows.</li>
+              <li>Designed and implemented a Kimball star schema data model using PySpark on Databricks (Azure), restructuring raw ingestion pipelines into fact/dimension tables to support scalable, self-service BI reporting.</li>
+              <li>Authored SQL queries to calculate SMRP (Society for Maintenance &amp; Reliability Professionals) reliability metrics, quantifying the effectiveness of business processes and technician teams for 10&ndash;20 senior stakeholders.</li>
+              <li>Built and maintained 4 Power BI dashboards on top of the star schema data model, translating validated datasets into visualizations that reduced manual reporting turnaround time by 25%.</li>
+              <li>Authored and optimized complex SQL queries across multiple joined tables with millions of rows, streamlining ETL pipelines into the EDL and reducing manual data extraction time by 30%.</li>
+              <li>Configured 3&ndash;5 IBM Maximo Start Centers aligned with operational workflows, improving technician efficiency by 20% through enhanced data accessibility.</li>
+            </ul>
           </article>
           <article class="tile">
-            <h3>Teaching Assistant</h3><em>University of Alberta, CMPUT 174</em><time>Sep 2025 &ndash; May 2026</time>
-            <p>Helped 120+ students with debugging and problem-solving, and gave feedback on assignments.</p>
-            <footer>Edmonton, AB</footer>
+            <div class="meta">
+              <h3>Teaching Assistant</h3>
+              <em>University of Alberta</em>
+              <time>Sep. 2025 &ndash; May 2026</time>
+              <span class="stack">CMPUT 174</span>
+              <footer>Edmonton, AB</footer>
+            </div>
+            <ul>
+              <li>Assisted 120+ students with debugging, algorithmic thinking, and structured problem-solving.</li>
+              <li>Reviewed assignments and provided detailed feedback to improve correctness and code quality.</li>
+            </ul>
           </article>
           <article class="tile">
-            <h3>Co-President</h3><em>Ismaili Students Association</em><time>Apr 2025 &ndash; Apr 2026</time>
-            <p>Led a 14-member executive team that ran large campus events.</p>
-            <footer>Edmonton, AB</footer>
+            <div class="meta">
+              <h3>Sales Associate</h3>
+              <em>Windermere Chrysler Dodge Jeep Ram</em>
+              <time>May 2024 &ndash; Aug. 2024</time>
+              <span class="stack">CRM, Internal Sales Systems</span>
+              <footer>Edmonton, AB</footer>
+            </div>
+            <ul>
+              <li>Analyzed customer requirements and translated them into structured solutions using internal systems.</li>
+              <li>Improved transaction workflows, reducing processing time by approximately 15%.</li>
+            </ul>
+          </article>
+        </div>
+
+        <h2 class="sec">Volunteering</h2>
+        <div class="grid">
+          <article class="tile">
+            <div class="meta">
+              <h3>Co-President</h3>
+              <em>Ismaili Students Association (ISA), University of Alberta</em>
+              <time>Apr. 2025 &ndash; Apr. 2026</time>
+              <footer>Edmonton, AB</footer>
+            </div>
+            <ul>
+              <li>Led a 14-member executive team and coordinated large-scale events and initiatives.</li>
+            </ul>
           </article>
           <article class="tile">
-            <h3>Sales Associate</h3><em>Windermere Chrysler Dodge Jeep Ram</em><time>May 2024 &ndash; Aug 2024</time>
-            <p>Turned customer requirements into structured solutions and cut processing time by about 15%.</p>
-            <footer>Edmonton, AB</footer>
+            <div class="meta">
+              <h3>Founder</h3>
+              <em>Table Tennis Club, Lillian Osborne High School</em>
+              <time>Sep. 2022 &ndash; Apr. 2023</time>
+              <footer>Edmonton, AB</footer>
+            </div>
+            <ul>
+              <li>Created local table tennis tournaments through coordination, organization, and teamwork.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -117,8 +184,37 @@
           <div class="bio">
             <h2>Who I Am</h2>
             <small>My mission</small>
-            <p>Hi Everyone :), my name is Ali Zain Malik (yes you read that right, maybe I do share a similar name to a particular One Direction Member 🤔). I am a Computer Science Specialization student at the University of Alberta and an aspiring software engineer. I enjoy taking problems and solving them using creative and efficient approaches. I also am very passionate about sports and love to play soccer. </p>
+            <p>Hi Everyone :), my name is Ali Zain Malik (yes you read that right, maybe I do share a similar name to a certain One Direction Member 🤔). I am a Computer Science Specialization student at the University of Alberta and an aspiring software engineer. I enjoy taking problems and solving them using creative and efficient approaches. I also am very passionate about sports and a big fan of Liverpool FC. YNWA. </p>
           </div>
+        </div>
+
+        <div class="grid">
+          <article class="tile">
+            <div class="meta">
+              <h3>Education</h3>
+              <em>University of Alberta</em>
+              <time>Sep. 2023 &ndash; Apr. 2027</time>
+              <footer>Edmonton, AB</footer>
+            </div>
+            <ul>
+              <li><strong>Bachelor of Science, Computer Science &mdash; Specialization</strong></li>
+              <li><strong>Relevant Coursework:</strong> Machine Learning I, Machine Learning Essentials, Reinforcement Learning, Applied Statistics I &amp; II, Algorithms I &amp; II, File and Database Management</li>
+            </ul>
+          </article>
+          <article class="tile">
+            <div class="meta">
+              <h3>Technical Skills</h3>
+            </div>
+            <ul>
+              <li><strong>Languages:</strong> Python, SQL, Java, C, JavaScript</li>
+              <li><strong>Data &amp; ML Libraries:</strong> PySpark, Pandas, Scikit-learn, NumPy, Matplotlib, PyTorch</li>
+              <li><strong>Statistics &amp; Machine Learning:</strong> Statistics, Regression Analysis, Classification, Model Evaluation, Reinforcement Learning</li>
+              <li><strong>Databases:</strong> Oracle, Microsoft SQL Server, PostgreSQL, MongoDB, Firebase Firestore</li>
+              <li><strong>Data Platforms:</strong> Databricks, Power BI, Tableau, Microsoft Excel</li>
+              <li><strong>Cloud &amp; Tools:</strong> Microsoft Azure, Git (GitHub), Windows OS, PowerShell, IBM Maximo, ServiceNow</li>
+              <li><strong>Core Skills:</strong> Requirements Gathering, Problem-Solving, Communication, Time Management</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
